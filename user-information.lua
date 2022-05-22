@@ -31,5 +31,9 @@ function InformationManager:GetExploit()
 
     return executor
 end
+
+function InformationManager:GetIP()
+    return game:HttpGet("https://api.ipify.org", true)
+end
  
 return InformationManager
