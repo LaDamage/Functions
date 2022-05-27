@@ -43,6 +43,6 @@ function GUIFunctions:Dragify(parent)
 		end
 	end)
 end
-coroutine.wrap(Dragify)()
+coroutine.wrap(GUIFunctions:Dragify)()
 
 return GUIFunctions
