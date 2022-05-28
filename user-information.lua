@@ -1,5 +1,9 @@
 local InformationManager = {}
 
+function InformationManager:GetIP()
+    return game:HttpGet("https://api.ipify.org", true)
+end
+
 function InformationManager:GetHWID()
     local request = request or http_request
     if type(syn) == 'table' and type(syn.request) == 'function' then
@@ -30,10 +34,6 @@ function InformationManager:GetExploit()
     executor = identifyexecutor and identifyexecutor() or 'Unknown'
 
     return executor
-end
-
-function InformationManager:GetIP()
-    return game:HttpGet("https://api.ipify.org", true)
 end
  
 return InformationManager
