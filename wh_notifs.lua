@@ -1,6 +1,6 @@
-return function gaf_webber(pet_name, tier, rarity, discord_id)
+return function(pet_name, tier, rarity, discord_id)
     local WebhookData = {
-        ["content"] = "<@"..discord_id..">", -- comma added here
+        ["content"] = "<@"..discord_id..">",
         ["embeds"] = {{
             ["title"] = "A "..pet_name.." has spawned!",
             ["color"] = 0x00ff36,
