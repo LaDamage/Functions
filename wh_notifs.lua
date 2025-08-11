@@ -17,6 +17,5 @@ return function(pet_name, tier, rarity, discord_id)
             ["timestamp"] = DateTime.now():ToIsoDate()
         }}
     }
-
     return WebhookData
 end
